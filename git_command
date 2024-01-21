@@ -1,0 +1,19 @@
+Les commandes de Manipulation  de Git
+
+#Sauvegarde de son travail:
+Git add --all
+Git commit -m "Nom du codeur"
+Git push Origin Nom_du_codeur
+
+#Recuperation du code pour
+
+Git clone {Adresse du depot}
+
+#voir la branche sur laquelle on travail
+git Branch
+
+#Creer une Branche 
+git branch {Nom_de_la_branche}
+
+#changer de branche
+git chechout {branche_cible}
