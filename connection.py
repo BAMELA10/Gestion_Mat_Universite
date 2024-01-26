@@ -14,7 +14,7 @@ req = "create table if not exists entree(id int AUTO_INCREMENT primary key, code
 cur.execute(req)
 req = "create table if not exists sortie(id int AUTO_INCREMENT primary key, code varchar(10), type varchar(32), date_operation date)"
 cur.execute(req)
-req = "create table if not exists cout(id int AUTO_INCREMENT primary key, code varchar(10), opereation varchar(32), montant int, article int,foreign key(article) references article(article))"
+req = "create table if not exists cout(id int AUTO_INCREMENT primary key, code varchar(10), operation varchar(32), montant int, article int,foreign key(article) references article(article))"
 cur.execute(req)
 req = "create table if not exists article_sortie (id int AUTO_INCREMENT primary key, quantite int, article int, sortie int, foreign key(article) references article (article),foreign key(sortie) references sortie(sortie))"
 cur.execute(req)
